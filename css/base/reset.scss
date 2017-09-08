@@ -1,0 +1,36 @@
+/* Reset css */
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, form, input, nav,
+textarea, p, blockquote, td
+{
+  margin: 0;
+  padding: 0;
+}
+
+img { border: 0; }
+
+a {
+  text-decoration: underline;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+ol, ul { list-style: none; }
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
+h1 {font-size: 2.0em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.6em;}
+h4 {font-size: 1.4em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1.0em;}
+
+input, button, textarea,select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+/* HTML5 tag*/
+article, aside, figure, footer, footer, header, nav, section, input
+{ display: block; }

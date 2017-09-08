@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <div id="page">
   <div id="breadcrumb">
-
     <p>首頁 <?php get_the_breadcrumb(); ?></p>
   </div>
 

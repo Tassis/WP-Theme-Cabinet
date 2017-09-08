@@ -9,18 +9,26 @@
     </h2>
   </header>
 
-  <figure>
+  <div class="featured-thumbnail">
     <!--picture-->
-  </figure>
+  </div>
 
   <div class="summary"><?php the_content(''); ?></div>
 
   <footer>
     <span class="meta">
-      by<?php the_author_nickname(); ?> /
-      <time datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-d'); ?></time>／
+      <span class="icon icon-user"></span>
+      <span class="metainfo"><?php the_author_nickname(); ?></span> ||
+      <span class="icon icon-calendar"></span>
+      <time datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-d'); ?></time> ||
       <?php the_category(',');?>
     </span>
+
+    <?php if( strpos( $post->post_content, '<!--more-->' ) ):   ?>
+      <span class="more-link">
+        <a href="<?php the_permalink();?>">→繼續閱讀←</a>
+      </span>
+    <?php endif; ?>
   </footer>
 </article>
 <?php endwhile; ?>
