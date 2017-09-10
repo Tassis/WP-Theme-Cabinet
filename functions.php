@@ -1,6 +1,10 @@
 <?php
   get_template_part('inc/cabient', 'function');
   get_template_part('inc/cabient', 'comments');
+  if (is_admin()){
+    get_template_part('inc/example', 'functions');
+
+  }
 
   $sidebar_data = array(
     'id' => 'sidebar',
@@ -11,14 +15,32 @@
     'after_title' => '</h4>',
   );
 
-  $footerbar_data = array(
-    'id' => 'footerbar',
-    'name' => '底部欄位',
+  $footerbar_left_data = array(
+    'id' => 'footer-bar-left',
+    'name' => 'footer(left)',
     'before_widget' => '<section class="footer-widget">',
     'after_widget' => '</section>',
     'before_title' => '<h4 class="footer-widget-title">',
     'after_title' => '</h4>',
   );
+
+  $footerbar_center_data = array(
+    'id' => 'footer-bar-center',
+    'name' => 'footer(center)',
+    'before_widget' => '<section class="footer-widget">',
+    'after_widget' => '</section>',
+    'before_title' => '<h4 class="footer-widget-title">',
+    'after_title' => '</h4>',
+  );
+
+  $footerbar_right_data = array(
+  'id' => 'footer-bar-right',
+  'name' => 'footer(right)',
+  'before_widget' => '<section class="footer-widget">',
+  'after_widget' => '</section>',
+  'before_title' => '<h4 class="footer-widget-title">',
+  'after_title' => '</h4>',
+);
 
   /* Apply wordpress's default setting.*/
   function remove_more_link_scroll( $link ) {
@@ -43,5 +65,7 @@
   /* Register Components */
   register_nav_menu( 'main-menu-bar', '主要導航');
   register_sidebar($sidebar_data);
-  register_sidebar($footerbar_data);
+  register_sidebar($footerbar_left_data);
+  register_sidebar($footerbar_center_data);
+  register_sidebar($footerbar_right_data);
 ?>

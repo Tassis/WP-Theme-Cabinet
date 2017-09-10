@@ -9,6 +9,7 @@
   <?php wp_head(); ?>
 </head>
 <body>
+  <div class="hidden" hidden><?php get_template_part( 'img/icon-sprite.svg' ); ?></div>
  <header id="header">
   <div class="container">
     <div class="header-logo">

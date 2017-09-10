@@ -17,16 +17,18 @@
 
   <footer>
     <span class="meta">
-      <span class="icon icon-user"></span>
-      <span class="metainfo"><?php the_author_nickname(); ?></span> ||
-      <span class="icon icon-calendar"></span>
-      <time datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-d'); ?></time> ||
+      <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
+      <span class="metainfo"><?php the_author_nickname(); ?></span> |
+      <svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>
+      <time datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-d'); ?></time> |
+      <svg class="icon icon-category"><use xlink:href="#icon-category"></use></svg>
       <?php the_category(',');?>
     </span>
 
     <?php if( strpos( $post->post_content, '<!--more-->' ) ):   ?>
       <span class="more-link">
-        <a href="<?php the_permalink();?>">→繼續閱讀←</a>
+        <svg class="icon icon-forward"><use xlink:href="#icon-forward"></use></svg>
+        <a href="<?php the_permalink();?>">繼續閱讀</a>
       </span>
     <?php endif; ?>
   </footer>

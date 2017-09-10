@@ -4,39 +4,43 @@ body{
 }
 
 #page {
-  background: #F1F1F1;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   overflow: hidden;
 }
 
 /* Slider Box */
 
 
+
 /* Post List */
 #post-list{
   float: left;
-  width: 875px;
-  padding-top: 2em;
+  width: 825px;
+  padding-top: 30px;
 }
 
 .posts-unit{
   background: #FFF;
   border: 1px solid #bbb;
   border-radius: 3px;
-  margin-bottom: 1.5em;
-  min-height: 250px;
+  margin-bottom: 25px;
+  min-height: 260px;
   position: relative;
   width: 820px;
   header{
     font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
-    margin: 0.5em 1em;
+    margin: 10px 20px;
     a {
       color: #444;
       text-decoration: none;
       &:hover{
         text-decoration: underline;
       }
+    }
+
+    .sticky{
+      color:#d63838;
     }
   }
 
@@ -53,6 +57,7 @@ body{
 
   footer{
     background: #F7F7F7;
+    border-top: 1px solid #ddd;
     bottom: 0;
     font-family: "Arial", "Microsoft JhengHei", "Times New Roman", Times, serif;
     position: absolute;
@@ -68,6 +73,76 @@ body{
       right: 20px;
       position: absolute;
     }
+
+    a {
+      color: #505bbb;
+      text-decoration: none;
+      &:hover{
+        color: #bd4141;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* Page Navi*/
+@mixin nav-button {
+  background: #bbb;
+  color: #333;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+
+  a{
+    display: block;
+    text-decoration: none;
+    width: 80px;
+    color: #333;
   }
 
+  &:hover{
+    background: #7ba3f4;
+    transition: 0.5s;
+  }
+
+}
+
+
+.page-navi{
+  font-family: "Arial", "Microsoft JhengHei", "Times New Roman", Times, serif;
+  position: relative;
+  height: 30px;
+  width: 100%;
+  position: relative;
+  .nav-link{
+    position: absolute;
+  }
+
+  .nav-num-list{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    .page-numbers{
+      @include nav-button;
+      float: left;
+      margin: 0 5px;
+      text-decoration: none;
+      min-width: 28px;
+    }
+    .current{
+      background: #7ba3f4;
+    }
+
+  }
+
+  .prev-link{
+    @include nav-button;
+    right: 100px;
+    text-align: center;
+   }
+
+  .next-link{
+    right: 0;
+    @include nav-button;
+  }
 }

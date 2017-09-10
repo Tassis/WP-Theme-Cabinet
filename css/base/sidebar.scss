@@ -1,5 +1,30 @@
 #sidebar{
-  margin-top: 2em;
-  width: 16em;
   float: right;
+  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  margin: 30px 40px 0 0;
+  width: 280px;
+}
+
+.side-widget {
+  margin-bottom: 50px;
+  h4 {
+    border-bottom: 1px solid #000;
+  }
+
+  ul {
+    margin: 10px 15px;
+
+    li {
+      border-bottom: 1px dotted #333;
+      margin-bottom: 2px;
+
+      a {
+        color: #333;
+        text-decoration: none;
+        &:hover{
+          color: #7ba3f4;
+        }
+      }
+    }
+  }
 }
