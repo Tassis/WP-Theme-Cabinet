@@ -29,13 +29,13 @@
 }
 
 .footer-bar-unit{
-  border-right: 1px solid #aaa;
   float: left;
   overflow: hidden;
   width: 32%;
   min-height: 0.5px;
-  &:last-child{
-    border-right: none;
+  &:nth-child(2){
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
   }
 }
 

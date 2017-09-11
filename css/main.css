@@ -113,7 +113,7 @@ body {
 
 #page {
   max-width: 1200px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 20px auto;
   overflow: hidden;
 }
 
@@ -122,6 +122,7 @@ body {
 #post-list {
   float: left;
   width: 825px;
+  margin-bottom: 20px;
 }
 
 .posts-unit {
@@ -275,6 +276,7 @@ body {
   padding-bottom: 142px;
   position: relative;
   width: 825px;
+  margin-bottom: 20px;
 }
 .page-single header {
   font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
@@ -315,8 +317,8 @@ body {
   overflow: hidden;
   float: left;
   width: 825px;
-  padding: 30px 0px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
 }
 #comments .comment-inner {
   background: #ddd;
@@ -435,8 +437,8 @@ body {
 #sidebar {
   float: right;
   font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
-  margin: 0 20px 40px 0;
-  width: 280px;
+  margin: 0 20px 20px 0;
+  width: 300px;
 }
 
 .side-widget {
@@ -491,14 +493,14 @@ body {
 }
 
 .footer-bar-unit {
-  border-right: 1px solid #aaa;
   float: left;
   overflow: hidden;
   width: 32%;
   min-height: 0.5px;
 }
-.footer-bar-unit:last-child {
-  border-right: none;
+.footer-bar-unit:nth-child(2) {
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
 }
 
 .footer-widget {

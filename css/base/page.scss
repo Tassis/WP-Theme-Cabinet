@@ -5,7 +5,7 @@ body{
 
 #page {
   max-width: 1200px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 20px auto;
   overflow: hidden;
 }
 
@@ -17,6 +17,7 @@ body{
 #post-list{
   float: left;
   width: 825px;
+  margin-bottom: 20px;
 }
 
 .posts-unit{
