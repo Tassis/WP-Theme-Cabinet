@@ -33,6 +33,7 @@
   float: left;
   overflow: hidden;
   width: 32%;
+  min-height: 0.5px;
   &:last-child{
     border-right: none;
   }

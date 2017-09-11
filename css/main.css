@@ -21,6 +21,7 @@ ol, ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
   font-size: 100%;
   font-weight: normal;
 }
@@ -84,6 +85,7 @@ article, aside, figure, footer, footer, header, nav, section, input {
   background: #324956;
   font-family: "Microsoft JhengHei", "Times New Roman", Times, serif;
   max-width: 100%;
+  margin-bottom: 20px;
 }
 #navigation ul {
   max-width: 1250px;
@@ -120,17 +122,16 @@ body {
 #post-list {
   float: left;
   width: 825px;
-  padding-top: 30px;
 }
 
 .posts-unit {
   background: #FFF;
   border: 1px solid #bbb;
   border-radius: 3px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   min-height: 260px;
   position: relative;
-  width: 820px;
+  width: 825px;
 }
 .posts-unit header {
   font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
@@ -259,15 +260,187 @@ body {
   transition: 0.5s;
 }
 
+/* Page / Single */
+#breadcrumb {
+  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  margin-bottom: 15px;
+}
+
+.page-single {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  float: left;
+  min-height: 300px;
+  padding-bottom: 142px;
+  position: relative;
+  width: 825px;
+}
+.page-single header {
+  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  margin: 10px 20px;
+}
+.page-single section {
+  font-family: "Microsoft JhengHei", "Times New Roman", Times, serif;
+  margin: 10px 20px;
+}
+.page-single footer {
+  background: #F7F7F7;
+  border-top: 1px solid #bbb;
+  bottom: 0;
+  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  width: 100%;
+  position: absolute;
+}
+
+#author-info {
+  padding: 20px;
+  overflow: hidden;
+}
+#author-info .description {
+  float: left;
+  margin: 0 15px 5px 15px;
+}
+#author-info .description h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+#author-info img {
+  float: left;
+  border: 1px solid #ccc;
+}
+
+/* Comments List */
+#comments {
+  overflow: hidden;
+  float: left;
+  width: 825px;
+  padding: 30px 0px;
+  margin-bottom: 30px;
+}
+#comments .comment-inner {
+  background: #ddd;
+  padding: 20px 40px 0 40px;
+}
+#comments .comment-inner header {
+  margin-bottom: 10px;
+}
+#comments .comment-inner ol li {
+  margin-bottom: 20px;
+}
+#comments .comment-inner ol ul {
+  margin-left: 20px;
+}
+
+.comment-body {
+  border-bottom: 1px solid #bbb;
+  border-radius: 3px;
+  font-family: "Microsoft JhengHei", "Times New Roman", Times, serif;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+.comment-body .comment-author-view {
+  overflow: hidden;
+  height: 60px;
+}
+.comment-body .comment-author-view img {
+  border: 1px solid #fff;
+  background: #fff;
+  float: left;
+  margin-right: 15px;
+}
+.comment-body .comment-author-view cite {
+  font-size: 18px;
+  font-style: normal;
+}
+.comment-body .comment-author-view cite a {
+  text-decoration: none;
+}
+.comment-body .comment-author-view time {
+  font-size: 18px;
+  display: block;
+  line-height: 30px;
+}
+.comment-body .comment-text {
+  margin: 5px 0;
+}
+.comment-body .reply {
+  float: right;
+  background: #bbb;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  padding: 5px;
+  max-width: 40px;
+  text-align: center;
+}
+.comment-body .reply a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+.comment-body .reply:hover {
+  background: #7ba3f4;
+  transition: 0.5s;
+}
+
+/* Comments Form */
+#respond {
+  border: 1px solid #111;
+}
+#respond h3 {
+  margin: 5px 20px;
+}
+
+#commentform {
+  font-family: "Microsoft JhengHei", "Times New Roman", Times, serif;
+  overflow: hidden;
+  padding: 5px 20px;
+}
+#commentform .comment-form-comment {
+  margin-right: 40px;
+  float: right;
+}
+#commentform .comment-form-comment textarea {
+  width: 420px;
+  resize: none;
+}
+#commentform .comfield {
+  width: 300px;
+  overflow: hidden;
+  margin: 5px  20px 20px 20px;
+}
+#commentform .comfield label {
+  float: left;
+}
+#commentform .comfield input {
+  float: right;
+  margin-right: 20px;
+}
+#commentform .form-submit {
+  width: 825px;
+  float: right;
+  margin: 5px 40px 10px 40px;
+}
+#commentform .form-submit input {
+  float: right;
+  background: #bbb;
+  border: 1px solid #ddd;
+  padding: 3px;
+}
+#commentform .form-submit input:hover {
+  background: #7ba3f4;
+  transition: 0.5s;
+}
+
 #sidebar {
   float: right;
   font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
-  margin: 30px 40px 0 0;
+  margin: 0 20px 40px 0;
   width: 280px;
 }
 
 .side-widget {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .side-widget h4 {
   border-bottom: 1px solid #000;
@@ -322,6 +495,7 @@ body {
   float: left;
   overflow: hidden;
   width: 32%;
+  min-height: 0.5px;
 }
 .footer-bar-unit:last-child {
   border-right: none;

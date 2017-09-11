@@ -1,0 +1,139 @@
+/* Comments List */
+#comments {
+  overflow: hidden;
+  float: left;
+  width: 825px;
+  padding: 30px 0px;
+  margin-bottom: 30px;
+  .comment-inner{
+    background: #ddd;
+    padding: 20px 40px 0 40px;
+    header{
+      margin-bottom: 10px;
+    }
+
+    ol {
+      li {
+        margin-bottom: 20px;
+      }
+      ul {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+
+.comment-body{
+  border-bottom: 1px solid #bbb;
+  border-radius: 3px;
+  font-family: "Microsoft JhengHei", "Times New Roman", Times, serif;
+  padding-bottom: 20px;
+  overflow: hidden;
+
+  .comment-author-view{
+    overflow: hidden;
+    height: 60px;
+
+    img {
+      border: 1px solid #fff;
+      background: #fff;
+      float: left;
+      margin-right: 15px;
+    }
+
+    cite {
+      font-size: 18px;
+      font-style: normal;
+
+      a{
+        text-decoration: none;
+
+      }
+    }
+
+    time {
+      font-size: 18px;
+      display: block;
+      line-height: 30px;
+    }
+  }
+
+  .comment-text {
+    margin: 5px 0;
+  }
+
+  .reply{
+    float: right;
+    background: #bbb;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    padding: 5px;
+    max-width: 40px;
+    text-align: center;
+    a{
+      color: #333;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    &:hover{
+      background: #7ba3f4;
+      transition: 0.5s;
+    }
+  }
+}
+
+/* Comments Form */
+#respond{
+  border:1px solid #111;
+  h3 {
+    margin: 5px 20px;
+  }
+
+}
+
+
+#commentform{
+  font-family: "Microsoft JhengHei", "Times New Roman", Times, serif;
+  overflow: hidden;
+  padding: 5px 20px;
+  .comment-form-comment {
+    margin-right: 40px;
+    float: right;
+    textarea{
+      width: 420px;
+      resize: none;
+    }
+  }
+
+
+  .comfield {
+    width: 300px;
+    overflow: hidden;
+    margin: 5px  20px 20px 20px;
+    label{
+      float: left;
+    }
+    input{
+      float: right;
+      margin-right: 20px;
+    }
+  }
+
+  .form-submit{
+    width: 825px;
+    float: right;
+    margin: 5px 40px 10px 40px;
+    input{
+      float: right;
+      background: #bbb;
+      border: 1px solid #ddd;
+      padding: 3px;
+      &:hover{
+        background: #7ba3f4;
+        transition: 0.5s;
+      }
+    }
+  }
+}

@@ -12,9 +12,9 @@
 									__('本文受到密碼保護，輸入後方可觀看。', 'Cabinet').
 							'</p>
 						</div>';
+						echo '</section>';
 			return;
 		endif;
-    echo '</section>';
 	endif;
 ?>
 
@@ -22,7 +22,10 @@
 <?php if (have_comments()) : ?>
   <div class="comment-inner">
     <header>
-      <p><?php comments_number('0' , '1', '%');  ?>則回應</p>
+			<h4>
+				<svg class="icon icon-pencil"><use xlink:href="#icon-pencil"></use></svg>
+				<?php comments_number('0' , '1', '%');  ?>則回應
+			</h4>
     </header>
     <ol id="comments-list">
   		<?php wp_list_comments(array ('type' => 'comment',
@@ -30,7 +33,7 @@
     </ol>
   </div>
 <?php endif; ?>
-<?php if ( get_comment_pages_count() > 1  ) :?>
+<?php if ( get_comment_pages_count() > 1 ) :?>
 		<div class="pagination">
 			<?php paginate_comments_links( array('prev_text' => '&laquo;', 'next_text' => '&raquo;') );?>
 		</div>
@@ -42,7 +45,7 @@
 			'author' => '<div class="comfield"><label for="author">名稱' . ( $req ? '<span class="required">*</span>' : '' ).'</label>
 			<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" /></div>',
 
-			'email' => '<div class="comfield"><label for="email">信箱' . ($req ? '<span class="required">*</span>' : '' ) . '</leabel>
+			'email' => '<div class="comfield"><label for="email">信箱' . ($req ? '<span class="required">*</span>' : '' ) . '</label>
 			<input id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_email'] ) . '" /></div>',
 
 			'url' => '<div class="comfield"><label for="url">個人網站</label>' .
@@ -62,5 +65,4 @@
 
 	comment_form($puzzle_fields);
  ?>
-
 </section>

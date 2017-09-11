@@ -1,1 +1,57 @@
-/* Post Single */
+/* Page / Single */
+#breadcrumb{
+  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  margin-bottom: 15px;
+}
+
+.page-single{
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  float: left;
+  min-height: 300px;
+  padding-bottom: 142px;
+  position:relative;
+  width: 825px;
+
+  header{
+    font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+    margin: 10px 20px;
+  }
+
+  section {
+    font-family: "Microsoft JhengHei", "Times New Roman", Times, serif;
+    margin: 10px 20px;
+  }
+
+  footer{
+    background: #F7F7F7;
+    border-top: 1px solid #bbb;
+    bottom: 0;
+    font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+    width: 100%;
+    position: absolute;
+
+  }
+
+}
+
+#author-info{
+  padding: 20px;
+  overflow: hidden;
+
+  .description{
+    float: left;
+    margin: 0 15px 5px 15px;
+    h6{
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+  }
+
+  img{
+    float: left;
+    border: 1px solid #ccc;
+  }
+}
