@@ -1,8 +1,10 @@
 <?php
   get_template_part('inc/cabient', 'function');
   get_template_part('inc/cabient', 'comments');
+
   if (is_admin()){
-    get_template_part('inc/example', 'functions');
+    get_template_part('inc/metaboxes/metabox', 'function');
+
 
   }
 
@@ -60,7 +62,6 @@
   add_filter( 'the_content_more_link', 'modify_read_more_link' );
   add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
   add_filter('pre_get_posts','search_filter');
-
 
   /* Register Components */
   register_nav_menu( 'main-menu-bar', '主要導航');

@@ -1,3 +1,5 @@
+/* Include Components*/
+/* Scss Variable*/
 /* Reset css */
 body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, form, input, nav,
 textarea, p, blockquote, td {
@@ -21,7 +23,7 @@ ol, ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: "Verdana", "Microsoft JhengHei", "Times New Roman", Times, serif;
   font-size: 100%;
   font-weight: normal;
 }
@@ -65,7 +67,7 @@ article, aside, figure, footer, footer, header, nav, section, input {
 /* Header */
 #header {
   background: #23282D;
-  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: "Verdana", "Microsoft JhengHei", "Times New Roman", Times, serif;
   padding: 1em 0;
   width: 100%;
 }
@@ -83,7 +85,7 @@ article, aside, figure, footer, footer, header, nav, section, input {
 
 #navigation {
   background: #324956;
-  font-family: "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: "Verdana", "Microsoft JhengHei", "Times New Roman", Times, serif;
   max-width: 100%;
   margin-bottom: 20px;
 }
@@ -131,11 +133,12 @@ body {
   border-radius: 3px;
   margin-bottom: 20px;
   min-height: 260px;
+  overflow: hidden;
+  padding-bottom: 30px;
   position: relative;
   width: 825px;
 }
 .posts-unit header {
-  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
   margin: 10px 20px;
 }
 .posts-unit header a {
@@ -148,8 +151,19 @@ body {
 .posts-unit header .sticky {
   color: #d63838;
 }
+.posts-unit .featured-thumbnail {
+  display: block;
+  float: left;
+  margin: 0 20px 10px 20px;
+}
 .posts-unit img {
-  max-width: 200px;
+  width: 200px;
+  height: 200px;
+  filter: opacity(1);
+  transition: 0.5s;
+}
+.posts-unit img:hover {
+  filter: opacity(0.5);
 }
 .posts-unit .summary {
   font-family: "Arial", "Microsoft JhengHei", "Times New Roman", Times, serif;
@@ -163,7 +177,7 @@ body {
   font-family: "Arial", "Microsoft JhengHei", "Times New Roman", Times, serif;
   position: absolute;
   width: 100%;
-  height: 1.8em;
+  height: 25px;
 }
 .posts-unit footer .meta {
   line-height: 1.8em;
@@ -263,8 +277,15 @@ body {
 
 /* Page / Single */
 #breadcrumb {
-  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: "Verdana", "Microsoft JhengHei", "Times New Roman", Times, serif;
   margin-bottom: 15px;
+}
+#breadcrumb a {
+  text-decoration: none;
+  color: #4d4a39;
+}
+#breadcrumb a:hover {
+  text-decoration: underline;
 }
 
 .page-single {
@@ -279,7 +300,6 @@ body {
   margin-bottom: 20px;
 }
 .page-single header {
-  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
   margin: 10px 20px;
 }
 .page-single section {
@@ -290,7 +310,7 @@ body {
   background: #F7F7F7;
   border-top: 1px solid #bbb;
   bottom: 0;
-  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: "Arial", "Microsoft JhengHei", "Times New Roman", Times, serif;
   width: 100%;
   position: absolute;
 }
@@ -436,13 +456,14 @@ body {
 
 #sidebar {
   float: right;
-  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: "Verdana", "Microsoft JhengHei", "Times New Roman", Times, serif;
   margin: 0 20px 20px 0;
-  width: 300px;
+  width: 350px;
 }
 
 .side-widget {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
+  padding: 0 20px 20px 20px;
 }
 .side-widget h4 {
   border-bottom: 1px solid #000;
@@ -505,7 +526,7 @@ body {
 
 .footer-widget {
   display: block;
-  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: "Verdana", "Microsoft JhengHei", "Times New Roman", Times, serif;
   overflow: hidden;
   margin: 0 0 0 20px;
 }

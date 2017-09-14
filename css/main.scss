@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
-@import "base/reset";
+
+
+/* Include Components*/
+@import "base/initial";
 @import "base/header";
 @import "base/page";
 @import "base/single";

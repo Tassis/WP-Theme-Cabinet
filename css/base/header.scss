@@ -1,7 +1,7 @@
 /* Header */
 #header{
   background: #23282D;
-  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: 'Verdana', $common-font;
   padding: 1em 0;
   width: 100%;
   .container{
@@ -19,7 +19,7 @@
 
 #navigation {
   background: #324956;
-  font-family: "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: 'Verdana', $common-font;
   max-width: 100%;
   margin-bottom: 20px;
   ul {

@@ -1,7 +1,14 @@
 /* Page / Single */
 #breadcrumb{
-  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: "Verdana", $common-font;
   margin-bottom: 15px;
+  a {
+    text-decoration: none;
+    color: #4d4a39;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 }
 
 .page-single{
@@ -15,12 +22,11 @@
   width: 825px;
   margin-bottom: 20px;
   header{
-    font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
     margin: 10px 20px;
   }
 
   section {
-    font-family: "Microsoft JhengHei", "Times New Roman", Times, serif;
+    font-family: $common-font;
     margin: 10px 20px;
   }
 
@@ -28,7 +34,7 @@
     background: #F7F7F7;
     border-top: 1px solid #bbb;
     bottom: 0;
-    font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+    font-family: 'Arial', $common-font;
     width: 100%;
     position: absolute;
 

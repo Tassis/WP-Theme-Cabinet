@@ -27,7 +27,7 @@
 .comment-body{
   border-bottom: 1px solid #bbb;
   border-radius: 3px;
-  font-family: "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: $common-font;
   padding-bottom: 20px;
   overflow: hidden;
 
@@ -95,7 +95,7 @@
 
 
 #commentform{
-  font-family: "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: $common-font ;
   overflow: hidden;
   padding: 5px 20px;
   .comment-form-comment {

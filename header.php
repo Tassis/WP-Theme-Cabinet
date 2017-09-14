@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="<?php bloginfo("stylesheet_url") ?>">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <title><?php bloginfo("name") ?> | <?php bloginfo('description') ?></title>
   <?php wp_head(); ?>
 </head>

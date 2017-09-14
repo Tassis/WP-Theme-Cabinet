@@ -1,5 +1,16 @@
 <?php
 
+function get_postmeta_thumbnail($post_id)
+{
+  $img =  get_post_meta( $post_id , 'cabinet_post_image', true );
+
+  if ( empty($img) )
+    return;
+
+  echo '<img src="'. $img .'" alt="" />';
+}
+
+
 function get_author_gravator(){
   $author = get_the_author_meta('email');
   echo get_avatar($author, $size="100");

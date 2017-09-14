@@ -1,12 +1,13 @@
 #sidebar{
   float: right;
-  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: 'Verdana', $common-font;
   margin: 0 20px 20px 0;
-  width: 300px;
+  width: 350px;
 }
 
 .side-widget {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
+  padding: 0 20px 20px 20px;
   h4 {
     border-bottom: 1px solid #000;
   }

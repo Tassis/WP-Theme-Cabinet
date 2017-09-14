@@ -11,6 +11,7 @@
 
   <div class="featured-thumbnail">
     <!--picture-->
+      <a href="<?php the_permalink(); ?>"><?php get_postmeta_thumbnail( get_the_ID() ); ?></a>
   </div>
 
   <div class="summary"><?php the_content(''); ?></div>

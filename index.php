@@ -2,7 +2,7 @@
 <div id="page">
   <!--Slider-->
   <div id="slider-box">
-
+    
   </div>
 
   <div id="post-list" role="main">

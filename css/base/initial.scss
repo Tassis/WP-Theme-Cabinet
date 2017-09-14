@@ -1,3 +1,6 @@
+/* Scss Variable*/
+$common-font: "Microsoft JhengHei", "Times New Roman", Times, serif;
+
 /* Reset css */
 body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, form, input, nav,
 textarea, p, blockquote, td
@@ -18,7 +21,7 @@ a {
 ol, ul { list-style: none; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: "Verdana", $common-font;
   font-size: 100%;
   font-weight: normal;
 }

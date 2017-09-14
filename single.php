@@ -3,7 +3,7 @@
   <div id="breadcrumb">
     <p>
       <svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg>
-      首頁 <?php get_the_breadcrumb(); ?>
+      <a href="<?php bloginfo('url'); ?>">首頁</a> <?php get_the_breadcrumb(); ?>
     </p>
   </div>
 

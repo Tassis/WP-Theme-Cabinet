@@ -6,7 +6,7 @@
 #site-info{
   background: #324956;
   color: #bbb;
-  font-family: "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: $common-font;
   letter-spacing: 1px;
   text-align: center;
   line-height: 30px;
@@ -41,7 +41,7 @@
 
 .footer-widget{
   display: block;
-  font-family: 'Century Gothic', "Microsoft JhengHei", "Times New Roman", Times, serif;
+  font-family: 'Verdana', $common-font;
   overflow: hidden;
   margin: 0 0 0 20px;
 
